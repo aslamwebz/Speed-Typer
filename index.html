@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SpeedTyper</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<style>
+		
+
+	</style>
+</head>
+<body class="bg-dark text-white">
+	<header class="bg-secondary text-center p-3 mb-5">
+		<h1>SpeedTyper</h1>
+	</header>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<!-- Word and input -->
+				<p class="lead">Type the Given Word Within <span class="text-success" id="seconds">5</span> Seconds:</p>
+				<h2 class="display-2 mb-5" id="current-word">Hello</h2>
+				<input type="text" placeholder="Start Typing" id="word-input" autofocus class="form-control form-control-lg">
+				<h4 id="message" class="mt-3"></h4>
+
+				<!-- Time and score -->
+				<div class="row mt-5">
+					<div class="col-md-6">
+						<h3>Time Left: <span id="time">0</span></h3>
+					</div>
+					<div class="col-md-6">
+						<h3>Score: <span id="score">0</span></h3>
+					</div>
+					<div class="col-md-12">
+						<h4>Level: <select name="" id="select">
+							<option value="6">Easy</option>
+							<option value="4">Medium</option>
+							<option value="3">Hard</option>
+						</select></h4>
+					</div>
+				</div>
+
+				<!-- Instructions -->
+				<div class="row mt-5">
+					<div class="col-md-12">
+						<div class="card card-body bg-secondary text-white">
+							<h5>Instructions</h5>
+							<p>Type each word in given amount of seconds to score. To play again just type the current word. Your score will reset.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-md-12">
+						<div class="card card-body bg-secondary text-white">
+							<h5>HighScores</h5>
+							<ul id="highScores"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
